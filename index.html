@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Interactive card details form</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="main">
     <div class="left-section">
       <div class="card-front">
+        
         <img src="images/bg-card-front.png" alt="">
       </div>
       <div class="card-back">
@@ -19,20 +22,36 @@
     </div>
     <div class="right-section">
       <div class="container">
-        <label for="name">Cardholder Name</label>
-        <input type="text">
-        <label for="name">Card Number</label>
-        <input type="text">
-        <label for="name">Exp. Date (MM/YY)</label>
-        <input type="text">
-        <label for="name">CVC</label>
-        <input type="text">
-        <input type="button" class="button" value='submit'>
+        <div class="card-holder">
+          <label for="name">Cardholder Name</label>
+          <input type="text">
+        </div>
+        <div class="card-number">
+          <label for="name">Card Number</label>
+          <input type="number">
+        </div>
+        <div class="card-expiration">
+          <div class="expiration">
+            <label for="expiration">ExpDate </label>
+            <input type="number">
+          </div>
+          <div class="expiration-date">
+            <label for="expiration">(MM/YY)</label>
+            <input type="number">
+          </div>
+          <div class="cvc">
+            <label for="name">CVC</label>
+            <input type="number">
+          </div>
+        </div>
+        <div class="submit-btn">
+          <input type="button" class="button" value='submit'>
+        </div>
       </div>
     </div>
   </div>
 
-  0000 0000 0000 0000
+  <!-- 0000 0000 0000 0000
   Jane Appleseed
   00/00
 
@@ -53,15 +72,15 @@
 
   Confirm
 
-  <!-- Completed state start -->
+  <!-- Completed state start --
 
   Thank you!
   We've added your card details
-  Continue
+  Continue -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Jose Sandate</a>.
   </div>
 </body>
 </html>
